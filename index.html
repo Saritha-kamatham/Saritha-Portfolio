@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saritha Kamatham | AI Engineer, Full Stack & Java Developer</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official Portfolio of Saritha Kamatham - AI Engineer, Full Stack Developer, Java Developer, Generative AI Enthusiast. Building intelligent applications using AI, Full Stack, Java, NLP, and Cloud Technologies.">
+  <meta name="keywords" content="Saritha Kamatham, AI Engineer, Full Stack Developer, Java Developer, Generative AI, NLP, React, Node.js, Python, Java, Portfolio, Madanapalle Institute of Technology and Science">
+  <meta name="author" content="Saritha Kamatham">
+  <meta property="og:title" content="Saritha Kamatham | AI Engineer, Full Stack & Java Developer">
+  <meta property="og:description" content="AI Engineer, Full Stack Developer, Java Developer, Generative AI Enthusiast. Building intelligent digital products.">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Three.js 3D WebGL Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- 3D WebGL Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="radial-glow"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-badge">
+          <span class="logo-initials">SK</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-name">Saritha Kamatham</span>
+          <span class="logo-role">Java & Full Stack Dev</span>
+        </div>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm hire-btn">
+          <span>Get in Touch</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for AI, Full-Stack & Java Developer Roles</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="gradient-text font-outfit">Saritha Kamatham</span>
+            <span class="typing-container">
+              <span id="typing-text"></span><span class="typing-cursor">|</span>
+            </span>
+          </h1>
+          
+          <h2 class="hero-headline">Turning Ideas into Intelligent Digital Products.</h2>
+          <p class="hero-subheadline">Building intelligent applications using AI, Full Stack & Java Development, NLP, and Cloud Technologies.</p>
+          
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-glow">
+              <span>View Projects</span>
+              <i data-lucide="layout-grid"></i>
+            </a>
+            <a href="https://github.com/Saritha-kamatham" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i data-lucide="github"></i>
+              <span>GitHub Profile</span>
+            </a>
+            <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Hero Animated Stats -->
+          <div class="hero-stats">
+            <div class="stat-card" data-tilt>
+              <div class="stat-icon-wrapper">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="stat-value"><span class="counter" data-target="9.67" data-decimals="2">0.00</span></div>
+              <div class="stat-label">CGPA B.Tech AI</div>
+            </div>
+            <div class="stat-card" data-tilt>
+              <div class="stat-icon-wrapper">
+                <i data-lucide="code-2"></i>
+              </div>
+              <div class="stat-value"><span class="counter" data-target="100">0</span>+</div>
+              <div class="stat-label">LeetCode Solved</div>
+            </div>
+            <div class="stat-card" data-tilt>
+              <div class="stat-icon-wrapper">
+                <i data-lucide="folder-git-2"></i>
+              </div>
+              <div class="stat-value"><span class="counter" data-target="32">0</span>+</div>
+              <div class="stat-label">GitHub Repos</div>
+            </div>
+            <div class="stat-card" data-tilt>
+              <div class="stat-icon-wrapper">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <div class="stat-value"><span class="counter" data-target="4">0</span>+</div>
+              <div class="stat-label">Verified Internships</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper" data-tilt>
+            <div class="profile-glow"></div>
+            <div class="profile-frame">
+              <!-- Holographic 3D Concentric Ring Overlay -->
+              <div class="hud-ring-overlay">
+                <svg viewBox="0 0 300 300" class="hud-ring-svg">
+                  <circle cx="150" cy="150" r="140" class="hud-rotate-cw" stroke="url(#cyan-grad)" stroke-width="1.5" stroke-dasharray="100 20 40 10" fill="none"/>
+                  <circle cx="150" cy="150" r="130" class="hud-rotate-ccw" stroke="url(#purple-grad)" stroke-width="1" stroke-dasharray="60 15 30 15" fill="none"/>
+                  <defs>
+                    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00f2fe"/>
+                      <stop offset="100%" stop-color="#00a8ff"/>
+                    </linearGradient>
+                    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#a855f7"/>
+                      <stop offset="100%" stop-color="#ec4899"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <!-- 3D Holographic Cyber Avatar Stage -->
+              <div class="profile-image-container">
+                <div class="profile-svg-avatar-stage">
+                  <div class="svg-avatar-inner">
+                    <svg viewBox="0 0 240 240" class="svg-avatar-graphic">
+                      <defs>
+                        <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#00f2fe"/>
+                          <stop offset="50%" stop-color="#00a8ff"/>
+                          <stop offset="100%" stop-color="#a855f7"/>
+                        </linearGradient>
+                        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                          <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3"/>
+                          <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+                        </radialGradient>
+                      </defs>
+                      
+                      <circle cx="120" cy="120" r="100" fill="url(#glowGrad)"/>
+                      <circle cx="120" cy="120" r="90" fill="none" stroke="url(#cyberGrad)" stroke-width="1.5" stroke-dasharray="12 6" opacity="0.6"/>
+                      <circle cx="120" cy="120" r="75" fill="none" stroke="#a855f7" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
+                      
+                      <circle cx="120" cy="85" r="34" fill="url(#cyberGrad)"/>
+                      <path d="M 45 190 C 45 140, 195 140, 195 190 Z" fill="url(#cyberGrad)" opacity="0.9"/>
+                      
+                      <rect x="70" y="145" width="100" height="24" fill="#0d111d" rx="12" stroke="#00f2fe" stroke-width="1"/>
+                      <text x="120" y="161" text-anchor="middle" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">&lt;Java.dev/&gt;</text>
+                      <text x="120" y="93" text-anchor="middle" fill="#030712" font-family="'Outfit', sans-serif" font-size="20" font-weight="800">SK</text>
+                    </svg>
+                  </div>
+                </div>
+                <div class="profile-scanline"></div>
+              </div>
+            </div>
+            
+            <div class="avatar-tag-box">
+              <div class="tag-title">3D Core Active</div>
+              <div class="tag-meta"><span class="tag-online-dot"></span> Three.js WebGL Engine</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">01 / Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+          <!-- Main Intro Bento Card -->
+          <div class="bento-card bento-span-8" data-tilt>
+            <div class="card-glow"></div>
+            <div class="bento-card-content">
+              <i data-lucide="user" class="bento-icon text-cyan"></i>
+              <h3>Who I Am</h3>
+              <p>I am a B.Tech Computer Science student specializing in Java Enterprise Architecture, Full Stack Development, and Artificial Intelligence at Madanapalle Institute of Technology and Science. Driven by engineered precision, I focus on building high-performance Java backends, dynamic web platforms, and intelligent AI integrations.</p>
+              <p>I thrive on turning complex algorithmic concepts into robust, enterprise-grade software systems, emphasizing clean OOP principles, efficiency, and scale.</p>
+            </div>
+          </div>
+
+          <!-- Academic Bento Card -->
+          <div class="bento-card bento-span-4" data-tilt>
+            <div class="card-glow"></div>
+            <div class="bento-card-content">
+              <i data-lucide="graduation-cap" class="bento-icon text-purple"></i>
+              <h3>Education</h3>
+              <p class="edu-institute">Madanapalle Institute of Technology and Science</p>
+              <p class="edu-degree">B.Tech in CS (Java, Full Stack & AI)</p>
+              <div class="edu-score-wrapper">
+                <span class="edu-score-label">CGPA</span>
+                <span class="edu-score-value">9.67 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Java Enterprise Stack Bento Card -->
+          <div class="bento-card bento-span-4" data-tilt>
+            <div class="card-glow"></div>
+            <div class="bento-card-content">
+              <i data-lucide="coffee" class="bento-icon text-cyan"></i>
+              <h3>Java Enterprise Stack</h3>
+              <ul class="passions-list">
+                <li><i data-lucide="server"></i> Java Servlets & JDBC API</li>
+                <li><i data-lucide="database"></i> Relational MySQL Databases</li>
+                <li><i data-lucide="box"></i> OOP & System Architecture</li>
+                <li><i data-lucide="terminal"></i> Data Structures & Algorithms</li>
+                <li><i data-lucide="cpu"></i> High Concurrency Systems</li>
+            </div>
+          </div>
+
+          <!-- Passions Bento Card -->
+          <div class="bento-card bento-span-4" data-tilt>
+            <div class="card-glow"></div>
+            <div class="bento-card-content">
+              <i data-lucide="flame" class="bento-icon text-pink"></i>
+              <h3>Core Passions</h3>
+              <ul class="passions-list">
+                <li><i data-lucide="coffee"></i> Java Enterprise Systems</li>
+                <li><i data-lucide="layers"></i> Full Stack Development</li>
+                <li><i data-lucide="database"></i> JDBC & Relational Databases</li>
+                <li><i data-lucide="cpu"></i> Artificial Intelligence</li>
+                <li><i data-lucide="cloud"></i> Cloud Technologies</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Attributes Bento Card -->
+          <div class="bento-card bento-span-4" data-tilt>
+            <div class="card-glow"></div>
+            <div class="bento-card-content">
+              <i data-lucide="zap" class="bento-icon text-yellow"></i>
+              <h3>Strengths & Mindset</h3>
+              <div class="attributes-list">
+                <div class="attribute-item">
+                  <h4><i data-lucide="code-2"></i> Strong Problem Solving</h4>
+                  <p>100+ LeetCode problems solved with optimized time & space complexity.</p>
+                </div>
+                <div class="attribute-item">
+                  <h4><i data-lucide="book-open"></i> Research Mindset</h4>
+                  <p>Co-authored IEEE research paper bringing academic rigor to codebases.</p>
+                </div>
+                <div class="attribute-item">
+                  <h4><i data-lucide="trophy"></i> Hackathon-Validated</h4>
+                  <p>2nd prize winner at AAPS Hackathon under tight constraints.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">02 / Technical Stack</span>
+          <h2 class="section-title">My Skillset</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-category-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-card-header">
+              <i data-lucide="code-2" class="text-cyan"></i>
+              <h3>Java & Core Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Java (Core & Enterprise)</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-cyan" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Data Structures & Algorithms</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-cyan" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Python</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-cyan" style="width: 88%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend & Java Servlets -->
+          <div class="skill-category-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-card-header">
+              <i data-lucide="server" class="text-pink"></i>
+              <h3>Backend & Enterprise APIs</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Java Servlets & JDBC</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-pink" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Node.js</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-pink" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Express.js & REST APIs</span>
+                  <span>86%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-pink" style="width: 86%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-card-header">
+              <i data-lucide="database" class="text-yellow"></i>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>MongoDB</span>
+                  <span>86%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-yellow" style="width: 86%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>MySQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-yellow" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Data -->
+          <div class="skill-category-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-card-header">
+              <i data-lucide="brain" class="text-blue"></i>
+              <h3>AI & Data</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>NLP & Google AI Studio</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-blue" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Machine Learning</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-blue" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Generative & Agentic AI</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-blue" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Prompt Engineering</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-blue" style="width: 95%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud & Tools -->
+          <div class="skill-category-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="skill-card-header">
+              <i data-lucide="wrench" class="text-green"></i>
+              <h3>Cloud & Tools</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>AWS & Google Cloud Platform</span>
+                  <span>82%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-green" style="width: 82%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>Git & GitHub</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-green" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-meta">
+                  <span>VS Code & Developer Tools</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill fill-green" style="width: 95%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack Cloud -->
+        <div class="tech-cloud-container">
+          <h4 class="tech-cloud-title">Ecosystem Visualization</h4>
+          <div class="tech-cloud">
+            <span class="tech-cloud-badge text-large">React.js</span>
+            <span class="tech-cloud-badge">Node.js</span>
+            <span class="tech-cloud-badge text-large">Python</span>
+            <span class="tech-cloud-badge text-large">Generative AI</span>
+            <span class="tech-cloud-badge">MongoDB</span>
+            <span class="tech-cloud-badge text-large">NLP</span>
+            <span class="tech-cloud-badge">TypeScript</span>
+            <span class="tech-cloud-badge">Google AI Studio</span>
+            <span class="tech-cloud-badge">Express.js</span>
+            <span class="tech-cloud-badge">AWS</span>
+            <span class="tech-cloud-badge text-large">Agentic AI</span>
+            <span class="tech-cloud-badge">Java & Servlets</span>
+            <span class="tech-cloud-badge">Git & GitHub</span>
+            <span class="tech-cloud-badge">MySQL</span>
+            <span class="tech-cloud-badge">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">03 / Career Path</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Timeline Design -->
+        <div class="timeline">
+          <!-- Timeline Entry 1: Java Developer Intern at Alfido Tech -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">May 2026 – Jul 2026</div>
+            <div class="timeline-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-header">
+                <h3>Java Developer Intern</h3>
+                <h4 class="company-name">Alfido Tech <span class="cert-verify-badge"><i data-lucide="shield-check"></i> Verified (ID: BS/REG/121448)</span></h4>
+              </div>
+              <ul class="experience-highlights">
+                <li><i data-lucide="check-circle-2"></i> Completed a 2-month professional <strong>Java Developer Internship</strong> recognized by <strong>AICTE, MSME, and ISO 9001:2015</strong>.</li>
+                <li><i data-lucide="check-circle-2"></i> Engineered core object-oriented software components, Data Structures, and modular backend application logic.</li>
+                <li><i data-lucide="check-circle-2"></i> Formulated efficient database connection architecture and relational <strong>MySQL transaction queries</strong>.</li>
+                <li><i data-lucide="check-circle-2"></i> Developed scalable Java backend services adhering to industry enterprise standards.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge">Java</span>
+                <span class="badge">OOP & DSA</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">AICTE Approved</span>
+                <span class="badge">MSME Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2: AI & Full Stack Intern at Study Owl -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2025 – Aug 2025</div>
+            <div class="timeline-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-header">
+                <h3>AI & Full Stack Development with NLP Intern</h3>
+                <h4 class="company-name">Study Owl Education Pvt. Ltd.</h4>
+              </div>
+              <ul class="experience-highlights">
+                <li><i data-lucide="check-circle-2"></i> Designed and developed <strong>SkillBuddy AI Learning Platform</strong> from scratch.</li>
+                <li><i data-lucide="check-circle-2"></i> Engineered dynamic full stack capabilities using <strong>React.js + Node.js + MongoDB</strong>.</li>
+                <li><i data-lucide="check-circle-2"></i> Programmed an intuitive, <strong>NLP-powered AI Chatbot</strong> that automates client inquiry answers.</li>
+                <li><i data-lucide="check-circle-2"></i> Developed and connected a customized <strong>AI Telegram chatbot</strong> to process on-the-go course queries.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge">React.js</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">NLP</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Telegram Bot API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3: Web Developer in PHP & MySQL Intern at ApexPlanet -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2025 – Jul 2025</div>
+            <div class="timeline-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-header">
+                <h3>Web Developer in PHP & MySQL Intern</h3>
+                <h4 class="company-name">ApexPlanet Software Pvt. Ltd. <span class="cert-verify-badge"><i data-lucide="shield-check"></i> Verified (ID: APSPL2508880)</span></h4>
+              </div>
+              <ul class="experience-highlights">
+                <li><i data-lucide="check-circle-2"></i> Completed a virtual internship in <strong>Web Development with PHP & MySQL</strong>, AICTE and MSME recognized.</li>
+                <li><i data-lucide="check-circle-2"></i> Built dynamic web interfaces and integrated relational <strong>MySQL database schemas</strong> for data-driven applications.</li>
+                <li><i data-lucide="check-circle-2"></i> Programmed secure backend PHP scripts for form handling, session validation, and database operations.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Web Development</span>
+                <span class="badge">AICTE Approved</span>
+                <span class="badge">MSME Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 4: Data Science Intern at Infotact -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Apr 2025 – Jun 2025</div>
+            <div class="timeline-card" data-tilt>
+              <div class="card-glow"></div>
+              <div class="timeline-header">
+                <h3>Data Science Intern</h3>
+                <h4 class="company-name">Infotact Solutions</h4>
+              </div>
+              <ul class="experience-highlights">
+                <li><i data-lucide="check-circle-2"></i> Structured and analyzed datasets, converting complex raw tables into interactive dashboards.</li>
+                <li><i data-lucide="check-circle-2"></i> Formulated specialized <strong>Machine Learning models</strong> to identify patterns in real-world environments.</li>
+                <li><i data-lucide="check-circle-2"></i> Developed <strong>Geospatial Analytics</strong> mapping to isolate and predict data-dense geographic points.</li>
+                <li><i data-lucide="check-circle-2"></i> Co-engineered the backend structure for the data processing tool <strong>Theta</strong>.</li>
+              </ul>
+              <div class="timeline-badges">
+                <span class="badge">Python</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">Plotly</span>
+                <span class="badge">Machine Learning</span>
+                <span class="badge">Geospatial Data</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">04 / Real Codebases (32+ GitHub Repos)</span>
+          <h2 class="section-title">Projects Showcase</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Repositories</button>
+          <button class="filter-btn" data-filter="java">Java & Enterprise</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack & MERN</button>
+          <button class="filter-btn" data-filter="ai">AI & NLP</button>
+          <button class="filter-btn" data-filter="web">Web & Interactive</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: InternAstra -->
+          <div class="project-card" data-category="ai fullstack" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <circle cx="200" cy="110" r="80" fill="none" stroke="rgba(0, 242, 254, 0.05)" />
+                <circle cx="200" cy="110" r="50" fill="none" stroke="rgba(0, 242, 254, 0.1)" stroke-dasharray="5 5" />
+                <circle cx="200" cy="110" r="25" fill="rgba(10, 15, 30, 0.8)" stroke="#00f2fe" stroke-width="1.5" />
+                <text x="188" y="114" fill="#00f2fe" font-family="'Outfit', sans-serif" font-size="10" font-weight="bold">GEMINI</text>
+                <g class="network-satellites">
+                  <line x1="200" y1="110" x2="140" y2="70" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.5" />
+                  <line x1="200" y1="110" x2="260" y2="70" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.5" />
+                  <line x1="200" y1="110" x2="130" y2="145" stroke="rgba(0, 168, 255, 0.4)" stroke-width="1.5" />
+                  <line x1="200" y1="110" x2="270" y2="150" stroke="rgba(0, 168, 255, 0.4)" stroke-width="1.5" />
+                  <rect x="110" y="55" width="60" height="20" fill="#141a29" rx="3" stroke="#a855f7" stroke-width="1" />
+                  <text x="115" y="68" fill="#ffffff" font-family="Inter, sans-serif" font-size="8">Resume.pdf</text>
+                  <rect x="235" y="55" width="55" height="20" fill="#141a29" rx="3" stroke="#a855f7" stroke-width="1" />
+                  <text x="240" y="68" fill="#a855f7" font-family="Inter, sans-serif" font-size="8">Skills Extracted</text>
+                  <rect x="100" y="135" width="60" height="20" fill="#141a29" rx="3" stroke="#00a8ff" stroke-width="1" />
+                  <text x="106" y="148" fill="#94a3b8" font-family="Inter, sans-serif" font-size="8">AI Matching</text>
+                  <rect x="245" y="135" width="60" height="20" fill="#141a29" rx="3" stroke="#10b981" stroke-width="1" />
+                  <text x="250" y="148" fill="#10b981" font-family="Inter, sans-serif" font-size="8">Matched 98%</text>
+                </g>
+                <path d="M 120 110 A 80 80 0 0 1 280 110" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="10 150" class="scan-arc" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Gemini AI</span>
+                <span class="tech-tag">GCP</span>
+              </div>
+              <h3 class="project-title">InternAstra – AI Internship Matching Platform</h3>
+              <p class="project-description">An intelligent recommendation web app. Parses candidate resumes using Google Gemini AI models, extracts key technical skills, and semantically aligns applicants with live internship roles.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="sparkles"></i> LLM Resume Parsing & Skill Extraction</div>
+                <div class="feature-bullet"><i data-lucide="target"></i> Semantic Candidate-to-Role AI Matching</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/InternAstra" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/InternAstra" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: MessageTrust-AI -->
+          <div class="project-card" data-category="ai" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="30" y="30" width="340" height="40" fill="#141a29" rx="6" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" />
+                <text x="45" y="55" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11">NLP Message Risk Analyzer</text>
+                <circle cx="340" cy="50" r="10" fill="#10b981" />
+                <path d="M336 50 L339 53 L344 47" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+                <rect x="30" y="85" width="160" height="105" fill="#141a29" rx="6" />
+                <text x="42" y="105" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Intent & Urgency</text>
+                <rect x="42" y="115" width="136" height="8" fill="#a855f7" rx="4" />
+                <rect x="42" y="130" width="100" height="8" fill="#10b981" rx="4" />
+                <rect x="42" y="145" width="120" height="8" fill="#00a8ff" rx="4" />
+                <rect x="205" y="85" width="165" height="105" fill="rgba(239, 68, 68, 0.08)" rx="6" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" />
+                <text x="218" y="105" fill="#ef4444" font-family="Inter, sans-serif" font-size="10" font-weight="bold">Scam Red Flags</text>
+                <text x="218" y="125" fill="#fca5a5" font-family="Inter, sans-serif" font-size="9">Urgent Action Required</text>
+                <text x="218" y="140" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9">Suspicious Link Detected</text>
+                <rect x="218" y="155" width="138" height="22" fill="#ef4444" rx="4" />
+                <text x="245" y="170" fill="#ffffff" font-family="Inter, sans-serif" font-size="9" font-weight="bold">Risk Score: HIGH</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Google AI Studio</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <h3 class="project-title">MessageTrust-AI – Real-Time Message Risk Analyzer</h3>
+              <p class="project-description">A real-time NLP application evaluating digital message trustworthiness. Analyzes intent, urgency, and hidden scam risk patterns using Google AI Studio API models.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="shield-alert"></i> Scam & Phishing Intent Analysis</div>
+                <div class="feature-bullet"><i data-lucide="cpu"></i> Google AI Studio LLM Pipeline</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/MessageTrust-AI" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/MessageTrust-AI" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Scam Message Reality Checker -->
+          <div class="project-card" data-category="ai" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="30" y="30" width="340" height="35" fill="#141a29" rx="4" />
+                <text x="45" y="52" fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">SMS & Social Scam Detector</text>
+                <rect x="30" y="75" width="340" height="110" fill="#141a29" rx="4" />
+                <path d="M50 100 L350 100 M50 130 L350 130 M50 160 L350 160" stroke="#1e293b" stroke-width="1"/>
+                <circle cx="70" cy="115" r="10" fill="#ef4444"/>
+                <text x="90" y="118" fill="#ffffff" font-family="Inter, sans-serif" font-size="10">Scam Flagged: High Priority Fraud Pattern</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Google AI Studio</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+              <h3 class="project-title">Scam Message Reality Checker</h3>
+              <p class="project-description">NLP-powered security tool parsing SMS, email, and social media texts to pinpoint phishing traps, explain red flags in plain English, and suggest protective steps.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="search"></i> Multi-Channel Text Phishing Scanner</div>
+                <div class="feature-bullet"><i data-lucide="alert-circle"></i> Plain-English Red Flag Explanations</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/scam-message-reality-checker" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/scam-message-reality-checker" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SkillBuddy -->
+          <div class="project-card" data-category="fullstack ai" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="25" y="25" width="350" height="30" fill="#141a29" rx="4" />
+                <circle cx="45" cy="40" r="5" fill="#ef4444" />
+                <circle cx="60" cy="40" r="5" fill="#f59e0b" />
+                <circle cx="75" cy="40" r="5" fill="#10b981" />
+                <rect x="115" y="65" width="165" height="70" fill="#141a29" rx="4" />
+                <text x="125" y="85" fill="#00a8ff" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">SkillBuddy AI</text>
+                <text x="125" y="105" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Active course path: Agentic Systems</text>
+                <rect x="290" y="65" width="85" height="130" fill="rgba(168, 85, 247, 0.05)" rx="4" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1" />
+                <rect x="298" y="75" width="70" height="16" fill="#a855f7" rx="3" />
+                <text x="312" y="86" fill="#ffffff" font-family="Inter, sans-serif" font-size="8">AI Mentor</text>
+                <circle cx="332" cy="140" r="18" fill="rgba(0, 168, 255, 0.1)" class="pulse-node" />
+                <circle cx="332" cy="140" r="8" fill="#00f2fe" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+              <h3 class="project-title">SkillBuddy – Smart Learning Platform</h3>
+              <p class="project-description">Full-stack educational platform built during Study Owl internship. Features secure auth, course analytics, mentor interactions, and an NLP Telegram chatbot.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="shield-check"></i> Secure Auth & Course Management</div>
+                <div class="feature-bullet"><i data-lucide="bot"></i> NLP AI Assistant & Telegram Bot</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/SkillBuddy-main" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/SkillBuddy-main" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: StudySync MERN App -->
+          <div class="project-card" data-category="fullstack" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="30" y="30" width="220" height="160" fill="#141a29" rx="6" />
+                <text x="45" y="55" fill="#00a8ff" font-family="'Outfit', sans-serif" font-size="12" font-weight="bold">StudySync Room #4</text>
+                <circle cx="140" cy="115" r="35" fill="none" stroke="#10b981" stroke-width="4" stroke-dasharray="160 40" />
+                <text x="122" y="120" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">25:00</text>
+                <rect x="260" y="30" width="110" height="160" fill="#141a29" rx="6" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1" />
+                <text x="270" y="48" fill="#a855f7" font-family="Inter, sans-serif" font-size="9" font-weight="bold">Live Peer Chat</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <h3 class="project-title">StudySync – Collaborative MERN Platform</h3>
+              <p class="project-description">Real-time collaborative study platform with virtual study rooms, live chat, synchronized Pomodoro focus timers, task boards, and JWT auth.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="users"></i> Peer Study Rooms & Realtime Chat</div>
+                <div class="feature-bullet"><i data-lucide="clock"></i> Synchronized Pomodoro Timer</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/StudySync-MERN-App" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/StudySync-MERN-App" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Enterprise Freelance Marketplace -->
+          <div class="project-card" data-category="fullstack" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="30" y="30" width="340" height="35" fill="#141a29" rx="4" />
+                <text x="45" y="52" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Enterprise Freelance Portal</text>
+                <rect x="30" y="75" width="160" height="110" fill="#141a29" rx="4"/>
+                <text x="42" y="95" fill="#ffffff" font-family="Inter, sans-serif" font-size="10">Active Contracts</text>
+                <rect x="205" y="75" width="165" height="110" fill="#141a29" rx="4"/>
+                <text x="218" y="95" fill="#10b981" font-family="Inter, sans-serif" font-size="10">Escrow Payments</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Express</span>
+              </div>
+              <h3 class="project-title">Enterprise Freelance Marketplace</h3>
+              <p class="project-description">A robust freelance job marketplace linking enterprise organizations with developer talent. Includes job posting, proposal bids, escrow milestone tracking, and user reviews.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="briefcase"></i> Job Bidding & Proposal Workflow</div>
+                <div class="feature-bullet"><i data-lucide="dollar-sign"></i> Escrow Milestone System</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/enterprise-freelance-marketplace" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/enterprise-freelance-marketplace" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Java E-Commerce Analytics -->
+          <div class="project-card" data-category="java" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="30" y="30" width="340" height="35" fill="#141a29" rx="4" />
+                <text x="45" y="52" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Java JDBC E-Commerce Analytics Engine</text>
+                <rect x="30" y="75" width="105" height="110" fill="#141a29" rx="4" />
+                <text x="40" y="95" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9">Total Revenue</text>
+                <text x="40" y="115" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="14" font-weight="bold">$48,250</text>
+                <rect x="145" y="75" width="225" height="110" fill="#141a29" rx="4" />
+                <path d="M160 160 L190 130 L220 145 L250 100 L280 115 L310 90 L345 105" fill="none" stroke="#f59e0b" stroke-width="2" />
+                <circle cx="310" cy="90" r="4" fill="#f59e0b" />
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Analytics</span>
+              </div>
+              <h3 class="project-title">Java E-Commerce Analytics System</h3>
+              <p class="project-description">Enterprise data analytics platform built in Java with JDBC. Manages customer profiles, product catalogs, categories, orders, payment gateways, and generates detailed analytical business reports.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="database"></i> Relational Database Architecture (MySQL)</div>
+                <div class="feature-bullet"><i data-lucide="trending-up"></i> Business Revenue & Sales Reports</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/Java-JDBC-ECommerce-Analytics-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/Java-JDBC-ECommerce-Analytics-System" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Employee Management Servlet -->
+          <div class="project-card" data-category="java" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <rect x="30" y="30" width="340" height="30" fill="#141a29" rx="4" />
+                <text x="45" y="50" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Employee Servlet Management System</text>
+                <rect x="30" y="70" width="340" height="115" fill="#141a29" rx="4" />
+                <line x1="30" y1="95" x2="370" y2="95" stroke="#1e293b" />
+                <text x="45" y="115" fill="#ffffff" font-family="Inter, sans-serif" font-size="9">#101</text>
+                <text x="80" y="115" fill="#ffffff" font-family="Inter, sans-serif" font-size="9">Saritha Kamatham</text>
+                <text x="180" y="115" fill="#00f2fe" font-family="Inter, sans-serif" font-size="9">AI Engineer</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Servlets</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <h3 class="project-title">Employee Management System (Servlet)</h3>
+              <p class="project-description">A Java Servlet-based web application leveraging JDBC and MySQL to manage employee records with full CRUD operations (Create, View, Update, Delete) and a responsive UI.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="check-square"></i> Full CRUD System Operations</div>
+                <div class="feature-bullet"><i data-lucide="server"></i> Java Servlet Controller Architecture</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/Employee-Management-System-Servlet" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/Employee-Management-System-Servlet" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9: Food Delivery App -->
+          <div class="project-card" data-category="java web" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <!-- Header bar -->
+                <rect x="25" y="25" width="350" height="32" fill="#141a29" rx="4" />
+                <circle cx="42" cy="41" r="5" fill="#ef4444"/>
+                <circle cx="56" cy="41" r="5" fill="#f59e0b"/>
+                <circle cx="70" cy="41" r="5" fill="#10b981"/>
+                <text x="90" y="45" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Food Delivery & Live Order System</text>
+                
+                <!-- Left Menu Items -->
+                <rect x="25" y="65" width="165" height="130" fill="#101625" rx="4" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+                <text x="35" y="83" fill="#ffffff" font-family="Inter, sans-serif" font-size="10" font-weight="bold">Featured Menu</text>
+                <rect x="35" y="92" width="145" height="26" fill="#1a2235" rx="3"/>
+                <text x="43" y="108" fill="#e5e7eb" font-family="Inter, sans-serif" font-size="9">Gourmet Burger + Combo</text>
+                <rect x="35" y="124" width="145" height="26" fill="#1a2235" rx="3"/>
+                <text x="43" y="140" fill="#e5e7eb" font-family="Inter, sans-serif" font-size="9">Artisan Pizza & Sides</text>
+                <rect x="35" y="156" width="145" height="26" fill="#1a2235" rx="3"/>
+                <text x="43" y="172" fill="#e5e7eb" font-family="Inter, sans-serif" font-size="9">Sushi Roll Platter</text>
+                
+                <!-- Right Live Order Tracker -->
+                <rect x="200" y="65" width="175" height="130" fill="#101625" rx="4" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+                <text x="210" y="83" fill="#10b981" font-family="Inter, sans-serif" font-size="10" font-weight="bold">Live Dispatch Tracker</text>
+                <line x1="210" y1="105" x2="365" y2="105" stroke="#1f293d" stroke-width="3"/>
+                <line x1="210" y1="105" x2="310" y2="105" stroke="#10b981" stroke-width="3"/>
+                <circle cx="210" cy="105" r="5" fill="#10b981"/>
+                <circle cx="260" cy="105" r="5" fill="#10b981"/>
+                <circle cx="310" cy="105" r="6" fill="#00f2fe" stroke="#ffffff" stroke-width="2"/>
+                <circle cx="365" cy="105" r="5" fill="#374151"/>
+                <text x="210" y="130" fill="#9ca3af" font-family="Inter, sans-serif" font-size="9">Status: Out for Delivery</text>
+                <text x="210" y="148" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">ETA: 12 Mins • Order #4092</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Food Delivery App & Order System</h3>
+              <p class="project-description">Food delivery web system enabling users to browse restaurant menus, customize orders, add items to a dynamic shopping cart, and track delivery status in real-time.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="shopping-bag"></i> Dynamic Cart & Checkout</div>
+                <div class="feature-bullet"><i data-lucide="map-pin"></i> Live Order Tracking System</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/food-delivery-app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/food-delivery-app" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10: OTT Platform -->
+          <div class="project-card" data-category="web" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <!-- Header bar -->
+                <rect x="25" y="25" width="350" height="32" fill="#141a29" rx="4" />
+                <circle cx="42" cy="41" r="5" fill="#ef4444"/>
+                <circle cx="56" cy="41" r="5" fill="#f59e0b"/>
+                <circle cx="70" cy="41" r="5" fill="#10b981"/>
+                <text x="90" y="45" fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">OTT Cinema Stream Dashboard</text>
+                
+                <!-- Main Movie Player Backdrop -->
+                <rect x="25" y="65" width="350" height="95" fill="#141c2e" rx="6" stroke="rgba(168,85,247,0.3)" stroke-width="1"/>
+                <!-- Hero Movie Badge -->
+                <rect x="35" y="75" width="50" height="20" fill="#a855f7" rx="3"/>
+                <text x="42" y="89" fill="#ffffff" font-family="Inter, sans-serif" font-size="9" font-weight="bold">ULTRA 4K</text>
+                <text x="95" y="89" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">Cyber Odyssey 2088</text>
+                
+                <!-- Video Seekbar -->
+                <line x1="35" y1="135" x2="365" y2="135" stroke="#1f293d" stroke-width="4" stroke-linecap="round"/>
+                <line x1="35" y1="135" x2="260" y2="135" stroke="#a855f7" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="260" cy="135" r="5" fill="#00f2fe" stroke="#ffffff" stroke-width="2"/>
+                <text x="35" y="152" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9">01:24:18 / 02:10:00</text>
+                
+                <!-- Category Carousel Miniatures -->
+                <rect x="25" y="166" width="105" height="30" fill="#1a2338" rx="3" stroke="#2a3652"/>
+                <text x="33" y="184" fill="#d1d5db" font-family="Inter, sans-serif" font-size="9">Sci-Fi Blockbusters</text>
+                <rect x="140" y="166" width="110" height="30" fill="#1a2338" rx="3" stroke="#2a3652"/>
+                <text x="148" y="184" fill="#d1d5db" font-family="Inter, sans-serif" font-size="9">Trending Action</text>
+                <rect x="260" y="166" width="115" height="30" fill="#1a2338" rx="3" stroke="#2a3652"/>
+                <text x="268" y="184" fill="#d1d5db" font-family="Inter, sans-serif" font-size="9">+ My Watchlist (8)</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">OTT Streaming Media Platform</h3>
+              <p class="project-description">A responsive OTT web application featuring video player controls, category carousels, movie previews, user watchlist tracking, and dark cinematic UI styling.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="play-circle"></i> Custom HTML5 Video Player</div>
+                <div class="feature-bullet"><i data-lucide="film"></i> Genre Categorization & Watchlist</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/OTT-Website" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/OTT-Website" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 11: Music Player Web App -->
+          <div class="project-card" data-category="web" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <!-- Header bar -->
+                <rect x="25" y="25" width="350" height="32" fill="#141a29" rx="4" />
+                <circle cx="42" cy="41" r="5" fill="#ef4444"/>
+                <circle cx="56" cy="41" r="5" fill="#f59e0b"/>
+                <circle cx="70" cy="41" r="5" fill="#10b981"/>
+                <text x="90" y="45" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Interactive Audio Equalizer HUD</text>
+                
+                <!-- Track Title & Vinyl Visual -->
+                <circle cx="65" cy="100" r="28" fill="#1a2338" stroke="#00f2fe" stroke-width="2"/>
+                <circle cx="65" cy="100" r="10" fill="#070a13" stroke="#a855f7" stroke-width="2"/>
+                <text x="105" y="93" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="bold">Cyber Synthwave Track #04</text>
+                <text x="105" y="110" fill="#00f2fe" font-family="Inter, sans-serif" font-size="9">Stereo Audio Engine • 320 Kbps</text>
+                
+                <!-- Dynamic Frequency Waveform Spectrum Bars -->
+                <g fill="#00f2fe" opacity="0.85">
+                  <rect x="240" y="95" width="5" height="25" rx="2"/>
+                  <rect x="249" y="85" width="5" height="35" rx="2"/>
+                  <rect x="258" y="75" width="5" height="45" rx="2"/>
+                  <rect x="267" y="90" width="5" height="30" rx="2"/>
+                  <rect x="276" y="70" width="5" height="50" rx="2" fill="#a855f7"/>
+                  <rect x="285" y="80" width="5" height="40" rx="2" fill="#a855f7"/>
+                  <rect x="294" y="100" width="5" height="20" rx="2"/>
+                  <rect x="303" y="82" width="5" height="38" rx="2"/>
+                  <rect x="312" y="72" width="5" height="48" rx="2"/>
+                  <rect x="321" y="92" width="5" height="28" rx="2"/>
+                  <rect x="330" y="86" width="5" height="34" rx="2"/>
+                  <rect x="339" y="98" width="5" height="22" rx="2"/>
+                </g>
+                
+                <!-- Audio Seekbar -->
+                <line x1="25" y1="150" x2="375" y2="150" stroke="#1f293d" stroke-width="4" stroke-linecap="round"/>
+                <line x1="25" y1="150" x2="220" y2="150" stroke="#00f2fe" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="220" cy="150" r="5" fill="#ffffff" stroke="#00f2fe" stroke-width="2"/>
+                <text x="25" y="172" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="9">02:45 / 04:12</text>
+                <text x="315" y="172" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9">VOL: 85% 🔊</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Interactive Web Music Player</h3>
+              <p class="project-description">A sleek web audio player featuring custom seekbars, play/pause controls, volume sliders, track progress indicators, and playlist management.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="music"></i> Audio API & Custom Player HUD</div>
+                <div class="feature-bullet"><i data-lucide="list"></i> Dynamic Playlist Navigation</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/music-player-website" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/music-player-website" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 12: Movie Ticket Booking -->
+          <div class="project-card" data-category="web" data-tilt>
+            <div class="card-glow"></div>
+            <div class="project-media">
+              <svg viewBox="0 0 400 220" class="project-mockup" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#070a13" rx="10" />
+                <rect x="15" y="15" width="370" height="190" fill="#0d111d" rx="6" stroke="#1f293d" stroke-width="1" />
+                <!-- Header bar -->
+                <rect x="25" y="25" width="350" height="32" fill="#141a29" rx="4" />
+                <circle cx="42" cy="41" r="5" fill="#ef4444"/>
+                <circle cx="56" cy="41" r="5" fill="#f59e0b"/>
+                <circle cx="70" cy="41" r="5" fill="#10b981"/>
+                <text x="90" y="45" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Cinema Interactive Seat Picker HUD</text>
+                
+                <!-- Cinema Screen Curved Indicator -->
+                <path d="M 50 72 Q 200 62 350 72" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                <text x="160" y="85" fill="#9ca3af" font-family="Inter, sans-serif" font-size="8">[ CINEMA SCREEN THIS WAY ]</text>
+                
+                <!-- Interactive Color-Coded Seat Grid Matrix -->
+                <!-- Row 1 -->
+                <rect x="70" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="90" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="110" y="98" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="130" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="160" y="98" width="14" height="12" fill="#00f2fe" rx="2" stroke="#ffffff" stroke-width="1.5"/>
+                <rect x="180" y="98" width="14" height="12" fill="#00f2fe" rx="2" stroke="#ffffff" stroke-width="1.5"/>
+                <rect x="200" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="230" y="98" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="250" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="270" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="290" y="98" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="310" y="98" width="14" height="12" fill="#ef4444" rx="2"/>
+                
+                <!-- Row 2 -->
+                <rect x="70" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="90" y="118" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="110" y="118" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="130" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="160" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="180" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="200" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="230" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="250" y="118" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="270" y="118" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="290" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="310" y="118" width="14" height="12" fill="#10b981" rx="2"/>
+                
+                <!-- Row 3 -->
+                <rect x="70" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="90" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="110" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="130" y="138" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="160" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="180" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="200" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="230" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="250" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="270" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                <rect x="290" y="138" width="14" height="12" fill="#ef4444" rx="2"/>
+                <rect x="310" y="138" width="14" height="12" fill="#10b981" rx="2"/>
+                
+                <!-- Legend & Booking Summary -->
+                <rect x="40" y="164" width="320" height="30" fill="#141a29" rx="4"/>
+                <circle cx="55" cy="179" r="4" fill="#10b981"/>
+                <text x="63" y="182" fill="#d1d5db" font-family="Inter, sans-serif" font-size="8">Available</text>
+                <circle cx="115" cy="179" r="4" fill="#ef4444"/>
+                <text x="123" y="182" fill="#d1d5db" font-family="Inter, sans-serif" font-size="8">Booked</text>
+                <circle cx="165" cy="179" r="4" fill="#00f2fe"/>
+                <text x="173" y="182" fill="#d1d5db" font-family="Inter, sans-serif" font-size="8">Selected (2)</text>
+                <text x="255" y="182" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">Total: $24.00</text>
+              </svg>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Movie Ticket Booking System</h3>
+              <p class="project-description">Online cinema reservation portal allowing moviegoers to select available seats, choose showtimes, review ticket pricing, and confirm booking passes.</p>
+              <div class="project-features">
+                <div class="feature-bullet"><i data-lucide="ticket"></i> Interactive Seat Grid Picker</div>
+                <div class="feature-bullet"><i data-lucide="credit-card"></i> Ticket Calculation & Booking</div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saritha-kamatham/movie-ticket-booking" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="https://github.com/Saritha-kamatham/movie-ticket-booking" target="_blank" rel="noopener noreferrer" class="btn btn-glow btn-sm">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Repositories Callout Card -->
+        <div class="view-all-repos-card">
+          <div class="view-all-content">
+            <h3>Explore All 32+ Open Source Repositories</h3>
+            <p>Check out Saritha's complete codebase portfolio on GitHub including AI experiments, algorithms, PHP blogs, and system utilities.</p>
+            <a href="https://github.com/Saritha-kamatham?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-glow">
+              <i data-lucide="github"></i>
+              <span>View All Repositories on GitHub</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & ACHIEVEMENTS SECTION -->
+    <section id="achievements" class="achievements-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">05 / Accolades</span>
+          <h2 class="section-title">Research & Achievements</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-blue">
+              <i data-lucide="book-open-check"></i>
+            </div>
+            <h3>IEEE Research Paper Publication</h3>
+            <p>Co-authored and successfully published a technical research paper, validating deep academic analytical abilities in computer systems.</p>
+            <a href="https://www.linkedin.com/posts/saritha-kamatham-0551402a9_research-conference-ieee-activity-7374625782599462913-Svyn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8oEEBmVZZ1AcjlxNHu6B2Y19FC9dxyEc" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View IEEE Paper Post</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-pink">
+              <i data-lucide="trophy"></i>
+            </div>
+            <h3>2nd Prize AAPS Hackathon</h3>
+            <p>Successfully pitched and engineered an application under intensive 24-hour hackathon constraints, securing the second place podium.</p>
+            <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View Post Credential</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 3 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-cyan">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <h3>Top 25 Achiever in GDG Code Vipasana</h3>
+            <p>Recognized among the top 25 developers in Google Developer Group's flagship code sprints for system logic and solution efficacy.</p>
+            <a href="https://www.linkedin.com/posts/saritha-kamatham-0551402a9_top25-codevipassana-googlecloud-activity-7425245594689953792--tfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8oEEBmVZZ1AcjlxNHu6B2Y19FC9dxyEc" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View GDG Award Post</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 4 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-yellow">
+              <i data-lucide="terminal"></i>
+            </div>
+            <h3>100+ LeetCode Solved</h3>
+            <p>Maintained a consistent puzzle-solving habit, building deep structural knowledge of time-space optimizations.</p>
+            <a href="https://leetcode.com/u/Saritha-Kamatham/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View LeetCode Profile</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 5 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-green">
+              <i data-lucide="star"></i>
+            </div>
+            <h3>5 Star HackerRank Badge</h3>
+            <p>Attained the highest 5-star proficiency badge in programming languages, showing consistent code execution quality.</p>
+            <a href="https://www.hackerrank.com/profile/sarithakamatham2" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View HackerRank Profile</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 6 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-purple">
+              <i data-lucide="flame"></i>
+            </div>
+            <h3>Gemini Hackathon Participant</h3>
+            <p>Competed in global developer cohorts to build interactive applications on top of Google Gemini's multimodal contexts.</p>
+            <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View Post Credential</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 7 -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-cyan">
+              <i data-lucide="network"></i>
+            </div>
+            <h3>Agentic AI Workshop</h3>
+            <p>Completed intensive training in designing autonomous multi-agent systems, tool call routing, and memory consolidation.</p>
+            <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View Post Credential</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Achievement 8: Japanese Language Learning -->
+          <div class="achievement-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="achievement-icon-wrapper text-pink">
+              <i data-lucide="languages"></i>
+            </div>
+            <h3>Japanese Language & Consistency Milestone</h3>
+            <p>Demonstrated long-term dedication, daily discipline, and linguistic consistency by mastering Japanese language skills.</p>
+            <a href="https://www.linkedin.com/posts/saritha-kamatham-0551402a9_japanese-languagelearning-consistency-activity-7481394070142210049-_wbA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEo8oEEBmVZZ1AcjlxNHu6B2Y19FC9dxyEc" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+              <span>View Japanese Post</span>
+              <i data-lucide="external-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">06 / Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1: Java Developer Internship - Alfido Tech -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-cyan">
+              <i data-lucide="coffee"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Java Developer Internship Certificate</h3>
+              <p class="cert-issuer">Alfido Tech (AICTE • MSME • ISO 9001:2015 Approved)</p>
+              <div class="cert-date"><i data-lucide="shield-check"></i> Candidate ID: BS/REG/121448</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2: Web Developer in PHP & MySQL - ApexPlanet -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-cyan">
+              <i data-lucide="code"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Web Developer in PHP & MySQL Internship</h3>
+              <p class="cert-issuer">ApexPlanet Software Pvt. Ltd. (AICTE & MSME Approved)</p>
+              <div class="cert-date"><i data-lucide="shield-check"></i> Cert ID: APSPL2508880</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 3: AWS Cloud Foundations -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-cyan">
+              <i data-lucide="cloud"></i>
+            </div>
+            <div class="cert-info">
+              <h3>AWS Cloud Foundations</h3>
+              <p class="cert-issuer">Amazon Web Services</p>
+              <div class="cert-date"><i data-lucide="calendar"></i> Verified Credential</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-purple">
+              <i data-lucide="cpu"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Generative AI</h3>
+              <p class="cert-issuer">GeeksforGeeks</p>
+              <div class="cert-date"><i data-lucide="calendar"></i> Verified Credential</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-purple">
+              <i data-lucide="brain-circuit"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Generative AI</h3>
+              <p class="cert-issuer">GUVI-HCL</p>
+              <div class="cert-date"><i data-lucide="calendar"></i> Verified Credential</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-yellow">
+              <i data-lucide="terminal"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Python Programming</h3>
+              <p class="cert-issuer">Microsoft Skill India</p>
+              <div class="cert-date"><i data-lucide="calendar"></i> Verified Credential</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-pink">
+              <i data-lucide="binary"></i>
+            </div>
+            <div class="cert-info">
+              <h3>DSA with C</h3>
+              <p class="cert-issuer">Great Learning</p>
+              <div class="cert-date"><i data-lucide="calendar"></i> Verified Credential</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="cert-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="cert-badge-wrapper text-green">
+              <i data-lucide="message-square"></i>
+            </div>
+            <div class="cert-info">
+              <h3>Prompt Engineering</h3>
+              <p class="cert-issuer">LinkedIn</p>
+              <div class="cert-date"><i data-lucide="calendar"></i> Verified Credential</div>
+              <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9/details/certifications/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cert-btn">
+                <span>View Cert Credential</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">07 / Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-panel" data-tilt>
+            <div class="card-glow"></div>
+            <div class="panel-content">
+              <h3>Ready to build something intelligent?</h3>
+              <p>Drop a message or reach out on social networks. Let's outline the next system architecture.</p>
+
+              <div class="info-items">
+                <div class="info-item">
+                  <div class="info-icon text-cyan"><i data-lucide="mail"></i></div>
+                  <div class="info-text">
+                    <span class="info-label">Email</span>
+                    <a href="mailto:sarithakamatham2006@gmail.com" class="info-link">sarithakamatham2006@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon text-purple"><i data-lucide="phone"></i></div>
+                  <div class="info-text">
+                    <span class="info-label">Phone</span>
+                    <a href="tel:+917013833020" class="info-link">+91 7013833020</a>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon text-pink"><i data-lucide="map-pin"></i></div>
+                  <div class="info-text">
+                    <span class="info-label">Location</span>
+                    <span class="info-val">Andhra Pradesh, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Socials with Crisp Inline SVG Icons -->
+              <div class="social-links-wrapper">
+                <h4>Digital Coordinates</h4>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/saritha-kamatham-0551402a9" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/Saritha-kamatham" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://leetcode.com/u/Saritha-Kamatham/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LeetCode Profile">
+                    <i data-lucide="code-2"></i>
+                    <span>LeetCode</span>
+                  </a>
+                  <a href="https://www.hackerrank.com/profile/sarithakamatham2" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="HackerRank Profile">
+                    <i data-lucide="terminal"></i>
+                    <span>HackerRank</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Interactive HUD Mini-Map Simulator -->
+              <div class="hud-map-simulator">
+                <div class="map-grid-bg"></div>
+                <div class="radar-sweep"></div>
+                <div class="radar-ping" style="top: 60%; left: 45%;"></div>
+                <div class="map-coordinates">LOC: 13.6288° N, 78.5015° E (AP, IN)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-panel">
+            <form id="portfolio-contact-form" class="futuristic-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">System Identifier (Name)</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="form-name" placeholder="e.g. Saritha Kamatham" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Sender Node (Email)</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="mail"></i>
+                    <input type="email" id="form-email" placeholder="e.g. sarithakamatham2006@gmail.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Transmission Subject</label>
+                <div class="input-wrapper">
+                  <i data-lucide="tag"></i>
+                  <input type="text" id="form-subject" placeholder="e.g. Java Enterprise / Full Stack Opportunity" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Payload Description (Message)</label>
+                <div class="input-wrapper">
+                  <textarea id="form-message" rows="6" placeholder="Describe the project specs, timeline, or query details..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-glow btn-full" id="form-submit-btn">
+                <span>Initiate Transmission</span>
+                <i data-lucide="send"></i>
+              </button>
+              
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#home" class="nav-logo">
+          <div class="logo-badge">
+            <span class="logo-initials">SK</span>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-name">Saritha Kamatham</span>
+            <span class="logo-role">Java & Full Stack Dev</span>
+          </div>
+        </a>
+        <p class="footer-copy">© 2026 Saritha Kamatham. Built with enterprise-grade precision.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="back-to-top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING AI ASSISTANT CHATBOT -->
+  <div class="chatbot-container" id="chatbot-container">
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open AI Assistant">
+      <div class="bot-icon-glow"></div>
+      <svg class="chat-open-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 2a2 2 0 0 1 2 2v1a7 7 0 0 1 7 7v6a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-6a7 7 0 0 1 7-7V4a2 2 0 0 1 2-2zm-5 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm10 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM8.5 17a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
+      </svg>
+      <i data-lucide="x" class="chat-close-icon hidden"></i>
+      <span class="chatbot-tooltip">Ask Saritha's AI Agent! 🤖</span>
+    </button>
+
+    <div class="chatbot-panel" id="chatbot-panel">
+      <div class="chatbot-header">
+        <div class="chatbot-avatar">
+          <span class="chatbot-avatar-dot"></span>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 2a2 2 0 0 1 2 2v1a7 7 0 0 1 7 7v6a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-6a7 7 0 0 1 7-7V4a2 2 0 0 1 2-2zm-5 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm10 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM8.5 17a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
+          </svg>
+        </div>
+        <div class="chatbot-header-text">
+          <h4>Saritha AI Agent <span class="ai-badge-pill">ONLINE</span></h4>
+          <p>Autonomous Portfolio Assistant</p>
+        </div>
+      </div>
+
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chat-message bot">
+          <div class="bot-msg-container">
+            <div class="msg-bot-avatar">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2a2 2 0 0 1 2 2v1a7 7 0 0 1 7 7v6a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-6a7 7 0 0 1 7-7V4a2 2 0 0 1 2-2zm-5 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm10 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM8.5 17a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/></svg>
+            </div>
+            <div class="chat-bubble">
+              Greetings! 👋 I am Saritha's AI Portfolio Agent. Ask me about her 32+ GitHub projects, Java Enterprise skills, 4 verified internships, or contact details!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chatbot-prompts" id="chatbot-prompts">
+        <button class="prompt-chip" data-query="Tell me about her projects">All Projects</button>
+        <button class="prompt-chip" data-query="What are her skills?">Core skills</button>
+        <button class="prompt-chip" data-query="What are her internships?">Internships</button>
+        <button class="prompt-chip" data-query="How can I contact her?">Contact</button>
+      </div>
+
+      <form class="chatbot-input-area" id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Ask Saritha's AI Assistant..." autocomplete="off">
+        <button type="submit" aria-label="Send Query" class="chat-send-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="three-scene.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
