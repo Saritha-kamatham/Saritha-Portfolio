@@ -243,40 +243,68 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------------
   // 8. CONTACT FORM TRANSMISSION HANDLER
   // ------------------------------------------------------------------------
-  const contactForm = document.getElementById('portfolio-contact-form');
+  const contactForm = document.getElementById('contact-form') || document.getElementById('portfolio-contact-form');
   const formStatus = document.getElementById('form-status');
-  const submitBtn = document.getElementById('form-submit-btn');
 
-  if (contactForm && formStatus && submitBtn) {
+  if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      submitBtn.disabled = true;
-      const originalText = submitBtn.querySelector('span').textContent;
-      submitBtn.querySelector('span').textContent = "Establishing Uplink...";
-      submitBtn.classList.add('btn-disabled');
-      formStatus.textContent = '';
-      formStatus.className = 'form-status';
+      const submitBtn = contactForm.querySelector('button[type="submit"]') || document.getElementById('form-submit-btn');
+      const originalText = submitBtn ? submitBtn.innerHTML : '';
+      
+      if (submitBtn) {
+        submitBtn.innerHTML = `<span>Transmitting...</span> <i data-lucide="loader" class="spin"></i>`;
+        submitBtn.disabled = true;
+      }
 
       setTimeout(() => {
-        submitBtn.querySelector('span').textContent = "Broadcasting Packet...";
+        if (formStatus) {
+          formStatus.innerHTML = `<div class="status-success"><i data-lucide="check-circle"></i> Message Transmitted Successfully! Saritha will get back to you shortly.</div>`;
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+        contactForm.reset();
         
-        setTimeout(() => {
+        if (submitBtn) {
+          submitBtn.innerHTML = originalText;
           submitBtn.disabled = false;
-          submitBtn.classList.remove('btn-disabled');
-          submitBtn.querySelector('span').textContent = "Transmission Completed";
-          
-          formStatus.textContent = "Packet accepted. Uplink established successfully. Saritha will reply shortly.";
-          formStatus.classList.add('success');
-          
-          contactForm.reset();
-          
-          setTimeout(() => {
-            submitBtn.querySelector('span').textContent = originalText;
-          }, 3500);
-          
-        }, 1200);
-      }, 1000);
+        }
+      }, 1200);
     });
   }
+
+  // ------------------------------------------------------------------------
+  // 9. AUTOMATIC HOVER & CLICK EXPAND FOR SKILL CARDS
+  // ------------------------------------------------------------------------
+  const skillCards = document.querySelectorAll('.skill-card-box');
+  skillCards.forEach(card => {
+    const label = card.querySelector('.btn-label');
+    
+    card.addEventListener('mouseenter', () => {
+      if (label) label.textContent = 'View Less';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      if (!card.classList.contains('expanded') && label) {
+        label.textContent = 'View More';
+      }
+    });
+  });
 });
+
+// Interactive Skill Card View More / View Less Toggle (On Click)
+window.toggleSkillCard = function(btn) {
+  const card = btn.closest('.skill-card-box');
+  if (!card) return;
+  
+  const expandGroup = card.querySelector('.skill-expand-group');
+  const label = btn.querySelector('.btn-label');
+  
+  if (!expandGroup) return;
+  
+  const isExpanded = card.classList.toggle('expanded');
+  
+  if (label) {
+    label.textContent = isExpanded || card.matches(':hover') ? 'View Less' : 'View More';
+  }
+};

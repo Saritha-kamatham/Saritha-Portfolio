@@ -1051,60 +1051,140 @@ a, button, input, textarea, select {
   transform: translateY(-4px);
 }
 
-.skill-card-header {
+/* --------------------------------------------------------------------------
+   8. SKILLS SECTION (EXPANDABLE BENTO CARDS MATCHING REFERENCE)
+   -------------------------------------------------------------------------- */
+.skills-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.skill-card-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.skill-card-box:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 12px 30px rgba(0, 242, 254, 0.2);
+  transform: translateY(-4px);
+}
+
+.skill-card-top {
+  margin-bottom: 16px;
+}
+
+.skill-card-icon-header {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-.skill-card-header h3 {
+.skill-card-icon-header.cyan, .skill-card-icon-header.orange {
+  background: rgba(0, 242, 254, 0.12);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+}
+
+.skill-card-heading {
   font-family: var(--font-outfit);
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-.skill-items {
+.skill-pill-container {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.skill-progress-item {
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 20px;
 }
 
-.skill-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
+.skill-pill {
+  font-size: 12px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: #e2e8f0;
+  background: rgba(0, 242, 254, 0.04);
+  border: 1px solid rgba(0, 242, 254, 0.15);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: var(--transition-fast);
 }
 
-.progress-bar-bg {
+.skill-card-box:hover .skill-pill {
+  border-color: rgba(0, 242, 254, 0.35);
+  background: rgba(0, 242, 254, 0.1);
+  color: #ffffff;
+}
+
+.skill-expand-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   width: 100%;
-  height: 6px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border-radius: 3px;
-  overflow: hidden;
 }
 
-.progress-bar-fill {
-  height: 100%;
-  border-radius: 3px;
-  transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+.skill-toggle-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent-cyan);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  align-self: flex-start;
+  transition: var(--transition-fast);
 }
 
-.fill-cyan { background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue)); }
-.fill-purple { background: linear-gradient(90deg, var(--accent-purple), var(--accent-pink)); }
-.fill-pink { background: linear-gradient(90deg, var(--accent-pink), var(--accent-purple)); }
-.fill-yellow { background: linear-gradient(90deg, var(--accent-yellow), var(--accent-pink)); }
-.fill-blue { background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)); }
-.fill-green { background: linear-gradient(90deg, var(--accent-green), var(--accent-blue)); }
+.skill-toggle-btn:hover {
+  color: #38bdf8;
+  transform: translateY(1px);
+}
+
+.skill-toggle-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.skill-card-box:hover .skill-expand-group,
+.skill-card-box.expanded .skill-expand-group {
+  display: flex !important;
+}
+
+.skill-card-box:hover .skill-toggle-btn svg,
+.skill-card-box.expanded .skill-toggle-btn svg {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1100px) {
+  .skills-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .tech-cloud-container {
   margin-top: 48px;
@@ -2504,4 +2584,8 @@ a, button, input, textarea, select {
     width: calc(100vw - 64px);
     right: -10px;
   }
+}
+
+.skill-expand-group {
+  display: none;
 }
