@@ -1894,9 +1894,9 @@ a, button, input, textarea, select {
    -------------------------------------------------------------------------- */
 .chatbot-container {
   position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 999;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
 }
 
 .chatbot-toggle {
@@ -1911,7 +1911,7 @@ a, button, input, textarea, select {
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.35);
   transition: var(--transition-smooth);
 }
 
@@ -1961,22 +1961,26 @@ a, button, input, textarea, select {
 }
 
 .chatbot-panel {
-  position: absolute;
-  bottom: 72px;
-  right: 0;
-  width: 360px;
-  height: 480px;
-  background-color: rgba(10, 15, 30, 0.95);
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  height: 520px;
+  max-height: calc(100vh - 110px);
+  background-color: rgba(10, 15, 30, 0.96);
   border: 1px solid var(--border-glow);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 12px 48px rgba(0,0,0,0.5);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 242, 254, 0.15);
+  backdrop-filter: blur(12px);
   transform: scale(0.95) translateY(10px);
   transform-origin: bottom right;
   opacity: 0;
   pointer-events: none;
+  z-index: 10001;
   transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -2098,7 +2102,20 @@ a, button, input, textarea, select {
   padding: 12px 16px;
   border-radius: 12px;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.55;
+}
+
+.typing-cursor {
+  display: inline-block;
+  color: var(--accent-cyan);
+  font-weight: bold;
+  animation: blinkCursor 0.8s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .chat-message.bot .chat-bubble {
