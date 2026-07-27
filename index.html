@@ -158,9 +158,11 @@
                 </svg>
               </div>
 
-              <!-- 3D Holographic Cyber Avatar Stage -->
+              <!-- REAL USER PORTRAIT PHOTO CARD -->
               <div class="profile-image-container">
-                <div class="profile-svg-avatar-stage">
+                <img src="images/saritha_portrait.jpg" alt="Saritha Kamatham" class="profile-real-img" id="hero-profile-img" onerror="this.style.display='none'; document.getElementById('profile-fallback-avatar').style.display='flex';">
+                
+                <div class="profile-svg-avatar-stage" id="profile-fallback-avatar" style="display:none;">
                   <div class="svg-avatar-inner">
                     <svg viewBox="0 0 240 240" class="svg-avatar-graphic">
                       <defs>
@@ -174,27 +176,46 @@
                           <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
                         </radialGradient>
                       </defs>
-                      
                       <circle cx="120" cy="120" r="100" fill="url(#glowGrad)"/>
                       <circle cx="120" cy="120" r="90" fill="none" stroke="url(#cyberGrad)" stroke-width="1.5" stroke-dasharray="12 6" opacity="0.6"/>
                       <circle cx="120" cy="120" r="75" fill="none" stroke="#a855f7" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
-                      
                       <circle cx="120" cy="85" r="34" fill="url(#cyberGrad)"/>
                       <path d="M 45 190 C 45 140, 195 140, 195 190 Z" fill="url(#cyberGrad)" opacity="0.9"/>
-                      
-                      <rect x="70" y="145" width="100" height="24" fill="#0d111d" rx="12" stroke="#00f2fe" stroke-width="1"/>
-                      <text x="120" y="161" text-anchor="middle" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">&lt;Java.dev/&gt;</text>
+                      <rect x="50" y="145" width="140" height="24" fill="#0d111d" rx="12" stroke="#00f2fe" stroke-width="1"/>
+                      <text x="120" y="161" text-anchor="middle" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">Saritha Kamatham</text>
                       <text x="120" y="93" text-anchor="middle" fill="#030712" font-family="'Outfit', sans-serif" font-size="20" font-weight="800">SK</text>
                     </svg>
                   </div>
                 </div>
+                
                 <div class="profile-scanline"></div>
+              </div>
+
+              <!-- FLOATING REFERENCE BADGE CARDS OVERLAY -->
+              <div class="floating-badge-card badge-left">
+                <div class="badge-icon-box orange">
+                  <span>&lt;/&gt;</span>
+                </div>
+                <div class="badge-text-box">
+                  <div class="badge-card-title">Java & AI Stack</div>
+                  <div class="badge-card-sub">Production Architecture</div>
+                </div>
+              </div>
+
+              <div class="floating-badge-card badge-right">
+                <div class="badge-icon-box cyan">
+                  <i data-lucide="award"></i>
+                </div>
+                <div class="badge-text-box">
+                  <div class="badge-card-title">4+ Verified Internships</div>
+                  <div class="badge-card-sub">Top 9.67 MITS Scholar</div>
+                </div>
               </div>
             </div>
             
             <div class="avatar-tag-box">
-              <div class="tag-title">3D Core Active</div>
-              <div class="tag-meta"><span class="tag-online-dot"></span> Three.js WebGL Engine</div>
+              <div class="tag-title">Saritha Kamatham</div>
+              <div class="tag-meta"><span class="tag-online-dot"></span> Java & Full Stack Developer</div>
             </div>
           </div>
         </div>
@@ -1693,24 +1714,69 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <a href="#home" class="nav-logo">
+    <div class="container footer-top-grid">
+      <!-- COLUMN 1: Brand & Bio -->
+      <div class="footer-col footer-col-brand">
+        <a href="#home" class="nav-logo footer-logo">
           <div class="logo-badge">
             <span class="logo-initials">SK</span>
           </div>
           <div class="logo-text-group">
-            <span class="logo-name">Saritha Kamatham</span>
+            <span class="logo-name">Saritha <span class="logo-accent">Kamatham</span></span>
             <span class="logo-role">Java & Full Stack Dev</span>
           </div>
         </a>
-        <p class="footer-copy">© 2026 Saritha Kamatham. Built with enterprise-grade precision.</p>
+        <p class="footer-bio-text">
+          Full Stack Developer & Java Enterprise Engineer. Specialized in high-performance web architecture, MERN stack, and intelligent AI models.
+        </p>
       </div>
-      <div class="footer-right">
-        <a href="#home" class="back-to-top">
-          <span>Back to Top</span>
-          <i data-lucide="arrow-up"></i>
-        </a>
+
+      <!-- COLUMN 2: NAVIGATION -->
+      <div class="footer-col footer-col-nav">
+        <h4 class="footer-col-title">NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#accolades">Achievements</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3: CONTACT INFO -->
+      <div class="footer-col footer-col-contact">
+        <h4 class="footer-col-title">CONTACT INFO</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:sarithakamatham2006@gmail.com">sarithakamatham2006@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:+917013833020">+91 7013833020</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Andhra Pradesh, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-content">
+        <p class="footer-copy">© 2026 Saritha Kamatham. All Rights Reserved.</p>
+        <span class="footer-center-tag">JAVA & AI ENTERPRISE</span>
+        <p class="footer-credit">Designed and Built with <span class="heart-icon">❤️</span> SK-EcoSystem</p>
       </div>
     </div>
   </footer>
@@ -1774,6 +1840,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="photo_b64.js"></script>
   <script src="three-scene.js"></script>
   <script src="chatbot.js"></script>
   <script src="main.js"></script>

@@ -1,6 +1,6 @@
 /* ==========================================================================
    AI PORTFOLIO ASSISTANT CHATBOT (chatbot.js)
-   Real-Time DOM Indexer & Word-by-Word LLM Token Streaming Engine.
+   Real-Time DOM Indexer, Token Streaming Engine, & Click-Outside Auto-Close.
    ========================================================================== */
 
 class PortfolioBot {
@@ -70,8 +70,36 @@ class PortfolioBot {
   
   setupListeners() {
     if (this.toggleBtn) {
-      this.toggleBtn.addEventListener('click', () => this.togglePanel());
+      this.toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.togglePanel();
+      });
     }
+
+    if (this.panel) {
+      this.panel.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+
+    // Auto-close when clicking ANYWHERE outside the chatbot on the website!
+    document.addEventListener('click', (e) => {
+      if (this.panel && this.panel.classList.contains('active')) {
+        const isClickInsidePanel = this.panel.contains(e.target);
+        const isClickOnToggle = this.toggleBtn && this.toggleBtn.contains(e.target);
+        
+        if (!isClickInsidePanel && !isClickOnToggle) {
+          this.closePanel();
+        }
+      }
+    });
+
+    // Pressing Escape key closes chatbot panel
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.panel && this.panel.classList.contains('active')) {
+        this.closePanel();
+      }
+    });
     
     if (this.promptsContainer) {
       this.promptsContainer.addEventListener('click', (e) => {
@@ -93,6 +121,15 @@ class PortfolioBot {
       });
     }
   }
+
+  closePanel() {
+    if (!this.panel) return;
+    this.panel.classList.remove('active');
+    if (this.closeIcon) this.closeIcon.classList.add('hidden');
+    if (this.openIcon) this.openIcon.classList.remove('hidden');
+    const tooltip = this.toggleBtn ? this.toggleBtn.querySelector('.chatbot-tooltip') : null;
+    if (tooltip) tooltip.style.opacity = '';
+  }
   
   togglePanel() {
     if (!this.panel) return;
@@ -102,7 +139,7 @@ class PortfolioBot {
     if (this.openIcon) this.openIcon.classList.toggle('hidden', isActive);
     
     if (isActive) {
-      // Re-index live DOM whenever user opens panel to catch any live DOM changes!
+      // Re-index live DOM whenever user opens panel
       this.indexLiveDOM();
       setTimeout(() => {
         if (this.input) this.input.focus();
